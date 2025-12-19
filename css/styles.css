@@ -1,0 +1,130 @@
+/* =====================================================
+   RESET DE BASE
+===================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+nav.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+}
+
+nav .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    border-bottom: 4px solid #333;
+}
+/* Conteneur principal pour aligner les cartes côte à côte */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style de la carte */
+  .card {
+    background: white;
+    border-radius: 12px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Ombre légère de base */
+    
+    /* Préparation de l'animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* L'effet au survol de la souris */
+  .card:hover {
+    transform: translateY(-8px); /* Soulève légèrement la carte */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Accentue l'ombre */
+  }
+  
+  /* Conteneur de l'image pour gérer l'arrondi et le rognage */
+  .card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Important : l'image remplit le cadre sans se déformer */
+  }
+  
+  /* Style des textes */
+  .card-content h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .card-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+  }
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #070000;
+    padding: 1rem 0;
+}
+footer a {
+    color: inherit; 
+    text-decoration: underline;
+}
+
+/* =====================================================
+   SECURITÉ IMAGES
+===================================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
